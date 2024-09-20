@@ -2,33 +2,33 @@
 
 simple precipitation super-resolution demo in Pytorch-Lightning
 
-### Usage
+## Usage
 
-#### set up env
+### set up env
 
 critical packages: `rootutils`, `wandb`, `omegaconf`, `torch`, `pytorch_lightning`
 
-#### set up data
+### set up data
 
-**raw & interim data is NOT provided dure to our license, please download at **[国家气象科学数据中心](https://data.cma.cn/data/detail/dataCode/NAFP_CLDAS2.0_NRT.html).
+raw & interim data is NOT provided dure to our license, please download at [国家气象科学数据中心](https://data.cma.cn/data/detail/dataCode/NAFP_CLDAS2.0_NRT.html).
 
-**after obtaining the raw data, execute files in **`src/raw2dataset` in numerical order, this will calculate pentad mean anomalies (i.e., deviation from grid annual cycle).
+after obtaining the raw data, execute files in **`src/raw2dataset` in numerical order, this will calculate pentad mean anomalies (i.e., deviation from grid annual cycle).
 
-**if you are looking for daily values rather than x-day-mean anomalies, modify line 79 in step3.**
+if you are looking for daily values rather than x-day-mean anomalies, modify line 79 in step3.
 
-#### set up model
+### set up model
 
-**only simple UNet is implemented in this public version, and this will definitely lead to undesirable results.**
+only simple UNet is implemented in this public version, and this will definitely lead to undesirable results.
 
-**but you can easily try other available SR models e.g. SRGAN, **[RCAN](https://github.com/yjn870/RCAN-pytorch), etc.
+but you can easily try other available SR models e.g. SRGAN, [RCAN](https://github.com/yjn870/RCAN-pytorch), etc.
 
-**just add some model to **`src/models.py`
+just add some model to `src/models.py`
 
-#### start training
+### start training
 
 **modify config in **`src/config.yaml`, or in cmd line, e.g., `python train.py plmodule_config.model_name='RCAN'`
 
-### project file tree
+## project file tree
 
 ```
  .
@@ -40,11 +40,11 @@ critical packages: `rootutils`, `wandb`, `omegaconf`, `torch`, `pytorch_lightnin
  │   ├── interim
  │   │   └── DOY
  │   │       ├── CLDAS_pre_0101_2008-2017.nc
- ...
+            ...
  │   └── raw
  │       ├── 2008
  │       │   ├── 01
- ...
+            ...
  ├── dependency
  │   ├── coords
  │   │   └── CLDAS.coords.npz
