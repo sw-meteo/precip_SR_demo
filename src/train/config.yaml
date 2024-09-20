@@ -1,0 +1,24 @@
+plmodule_config:
+  G_config:
+    input_shape: [1, 16, 16]
+  model_name: 'UNet'
+
+dataset_config:
+  chunk_width: 16
+  window: 5
+
+dataloader_config:
+  batch_size: 64
+  num_workers: 64
+  pin_memory: true
+
+training_config:
+  module_class: DetermModule
+  project_name: SR.dev
+  model_name: baseline
+  model_version: v1
+  log_dir: result/train  # relative path
+  batch_size: 64
+  max_epochs: 200
+  seed: 42
+  debug: false
