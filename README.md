@@ -26,7 +26,7 @@ just add some model to `src/models.py`
 
 ### start training
 
-**modify config in **`src/config.yaml`, or in cmd line, e.g., `python train.py plmodule_config.model_name='RCAN'`
+modify config in `src/config.yaml`, or in cmd line, e.g., `python train.py plmodule_config.model_name='RCAN'`
 
 ## project file tree
 
