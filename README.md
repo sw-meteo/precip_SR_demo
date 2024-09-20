@@ -6,7 +6,7 @@ simple precipitation super-resolution demo in Pytorch-Lightning
 
 #### set up env
 
-**critical packages: **`rootutils`, `wandb`, `omegaconf`, `torch`, `pytorch_lightning`
+critical packages: `rootutils`, `wandb`, `omegaconf`, `torch`, `pytorch_lightning`
 
 #### set up data
 
