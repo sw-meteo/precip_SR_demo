@@ -10,7 +10,7 @@ critical packages: `rootutils`, `wandb`, `omegaconf`, `torch`, `pytorch_lightnin
 
 ### set up data
 
-raw & interim data is NOT provided dure to our license, please download at [国家气象科学数据中心](https://data.cma.cn/data/detail/dataCode/NAFP_CLDAS2.0_NRT.html).
+raw & interim data is NOT provided due to our license, please download at [国家气象科学数据中心](https://data.cma.cn/data/detail/dataCode/NAFP_CLDAS2.0_NRT.html).
 
 after obtaining the raw data, execute files in `src/raw2dataset` in numerical order, this will calculate pentad mean anomalies (i.e., deviation from grid annual cycle).
 
